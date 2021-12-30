@@ -16,3 +16,54 @@ body {
     margin: 0;
 }
 
+.search {
+    position: relative;
+    height: 50px;
+}
+
+.input {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    padding: 15px;
+    font-size: 18px;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+
+}
+
+.btn {
+    position: absolute;
+    font-size: 24px;
+    border: 0;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.btn:focus , .input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 200px;
+}
+
+.search.active .btn{
+    transform:translateX(198px);
+    -webkit-transform:translateX(198px);
+    -moz-transform:translateX(198px);
+    -ms-transform:translateX(198px);
+    -o-transform:translateX(198px);
+}
